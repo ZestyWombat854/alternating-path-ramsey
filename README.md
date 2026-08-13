@@ -16,6 +16,42 @@ axiom audit, and an independent statement-fidelity audit); what remains
 before posting is owner review and the immediate pre-post novelty
 re-check.
 
+## Verify the core result in about a second
+
+The single genuinely new mathematical object here is the **Aggregate
+Sum Theorem** (sum_m [P(m)+Q(m)] >= 2|E(G)| over every finite graph on
+an ordered vertex set), with the Extraction Lemma as its averaging
+corollary. Two referee agents, blind to each other and sharing zero
+code, each wrote their own exhaustive checker for it. Either one
+confirms the identity — plus the Lemma 4.1 recursion it rests on — on
+all 33,868 graphs on up to 6 vertices, in about a second, with Python 3
+stdlib only:
+
+```
+cd referees/B/code && python3 verify_PQ_aggregate.py
+#   ~1.1 s → "GRAND RESULT -- Lemma 4.1 exact match AND Theorem 5 AND
+#             Corollary 5.1 hold on ALL graphs to n=6: True"
+
+cd referees/A/code && python3 part4_pq.py
+#   ~1.1 s, a single self-contained file → "ALL_PASS: True"
+```
+
+Same corpus, independently implemented — diff the two `code/`
+directories to confirm they share nothing. B's run also rewrites
+`referees/B/data/PQ_aggregate.txt`, byte-comparable against the
+shipped copy.
+
+Second layer — the Ramsey-number claims themselves: the eight SAT
+instances in `referees/A/data/*.cnf` re-solve with any solver of your
+choice (expected verdicts per cell in `referees/A/report.md`), and
+`closure/encode_5_3_gap.py` builds the (5,3) instances from the
+definitions rather than shipping them, if you prefer an encoding you
+can read over one you must trust. Third layer — machine-checked
+foundations: `cd lean && lake exe cache get && ./verify.sh` (build,
+escape-hatch scan, axiom audit; `lean/FORMALIZATION_MAP.md` states
+exactly what is and is not formalized). The command-by-command table
+with expected outputs for everything else is below.
+
 ## Layout
 
 ```
