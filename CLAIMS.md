@@ -37,7 +37,7 @@ an in-bundle file; nothing here was left as a bare assertion.
 | 24 | Both repaired inline in the submitted proof; pre-repair original kept | `proof-final.md` vs `proof-original-with-errata.md` — diff the two | |
 | 25 | One referee (B) flagged a verification cell (5,3) it hadn't finished; already had independent SAT coverage from A; now closed a second way | `referees/B/report.md` §3 NOT-DONE block; `referees/A/data/cnf_5_3.cnf`; `closure/results.json`, `closure/README.md` | |
 | 26 | No human peer review was obtained | Not verifiable by a file (absence claim about the real world, not this repo) | Stated on the run's own word, same as the a=3 debut's identical claim |
-| 27 | Lean formalization: [placeholder] | `code/lean-49/` (outside this bundle; LEAN49's separate, parallel deliverable) | **Must be resolved before posting — see README.md and the submission note's checklist** |
+| 27 | Lean formalization: partial, posted as-is with exact boundaries (four kernel-checked theorems; Aggregate Sum / Extraction / assembly NOT formalized) | `lean/` in this bundle — RESOLVED 2026-08-13 after LEAN49 landed; see the "Lean formalization rows" section below for the claim-by-claim backing | Placeholder resolved before posting, as this row originally required |
 
 ## Result note
 
@@ -99,3 +99,15 @@ in `../../NOTEBOOK.md` (PREP49's closing entry).
 | "every object in the pinned statement ... plus four theorems" (orbit identification; both generator computations; path-peeling Lemma 3.1) | lean/Sealed49/{Defs,Orbit,Aggregate}.lean — palt_eq_Hgraph, actGraph_rho_hgraph, actGraph_sigma_hgraph, realizes_palt_succ_iff; per-theorem axiom listing in lean/Sealed49/AxiomAudit.lean |
 | "What is NOT formalized: the Aggregate Sum Theorem, the Extraction Lemma, and the final assembly" | Honest-boundary statement — no Lean file claims these; Extraction.lean/Main.lean deliberately absent rather than stubbed (zero placeholder proofs anywhere) |
 | "an independent statement-fidelity audit of the Lean definitions" | lean/statement-audit.md — independent auditor, forbidden from reading the author's rationale; verified Lean terms against mathlib SOURCE (finRotate, Fin.revPerm, fromRel, comap), 16/16 items FAITHFUL, verdict FAITHFUL-WITH-NOTES, zero deviations; includes the honesty ruling on calling realizes_palt_succ_iff "Lemma 3.1 in equivalent pointwise form" |
+
+## Pre-posting re-check row (appended 2026-08-13)
+
+| Claim in entry text | Backing in this bundle |
+|---|---|
+| "The nearest recent neighbors are the 2026 exact ordered Turán results ... a pre-posting re-check read both proofs ... neither of our two statements in prior literature" | provenance/lemma-novelty-sweep.md §Addendum — both full texts pulled (task mirrors arxiv-2603.12358.*, arxiv-2512.15461.*), both Turán proofs read, method comparison recorded; APPEARS-NEW verdicts re-affirmed against the enlarged base |
+
+Also in the same re-check: row 8's "no independent citations yet" claim
+re-verified fresh on posting day — Semantic Scholar reports
+citationCount 0 for arXiv:2607.06817 (task mirror
+semanticscholar-2607.06817-prepost-20260813.json, 2026-08-13T18:35Z).
+Row 8's original NOT-DONE caveat is thereby cleared for this posting.

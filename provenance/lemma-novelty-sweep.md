@@ -240,3 +240,51 @@ main theorem — that citation list is out of scope here.)
   Kleitman / Chvatal-Komlos altitude; Erdos-Szekeres standard proof; Caro
   "Degree Monotone Paths"; Balko-Cibulka-Kral-Kyncl "Ramsey numbers of
   ordered graphs"; Barat-Gyarfas-Toth spanning trees paper.
+
+## Addendum — pre-posting re-check (2026-08-13, orchestrator)
+
+Run immediately before submission #2 posted, per this run's convention
+that a novelty gate goes stale in hours. Fresh mirrors (task
+artifacts/web/, MANIFEST rows 2026-08-13T18:05–18:25Z): both source
+papers' abs pages (2607.06817 still at v2, 2604.16188 still at v1 — no
+new versions since the morning gate) and a 15-item arXiv listing sweep
+(math.CO, "dihedral Ramsey" OR "alternating path", newest first).
+
+The sweep surfaced two papers the report above did not examine — and
+companion source paper 2604.16188 itself cites the first (its [37]):
+
+- **Kucheriya–Lo–Petr–Sgueglia–Yan**, "Ordered Ramsey and Turán numbers
+  of alternating paths and their variants," arXiv:2603.12358 (March
+  2026): R_<(AP_n) <= (2+sqrt(2)/2+o(1))n, and the exact ordered Turán
+  number ex_<(N, AP_n) = C(n−1,2)+(n−2)(N−n+1) (its Theorem 2).
+- **Barát–Freschi–Tóth**, "Matchings avoiding ordered patterns,"
+  arXiv:2512.15461 (Dec 2025): independently the same Turán result (its
+  Theorem 2.10, via nested matchings) and R_<(Alt-P_t) <= 3t+3 (its
+  Theorem 3.1).
+
+**Method check — both full texts pulled and the two Turán proofs read**
+(mirrors arxiv-2603.12358.{pdf,txt}, arxiv-2512.15461.{pdf,txt}):
+
+- 2603.12358 Theorem 2: grey-edge accounting + an n−2-round algorithm
+  deleting the leftmost/rightmost surviving edge on sliding vertex
+  windows; a surviving edge forces an AP_n copy by zigzag
+  reconstruction. No per-vertex chain labels, no summation identity,
+  no degree hypothesis.
+- 2512.15461 Theorem 2.10: rounds G_0 ⊇ G_1 ⊇ ... deleting, per vertex
+  v, the extremal (largest-right / smallest-left, alternating by round
+  parity) edge vv+; an edge surviving 2k−2 rounds forces Alt-P_2k by
+  zigzag; telescoped edge counts give the bound. This is the closer
+  relative: one-extremal-edge-per-vertex-per-round is an accounting
+  recognizably adjacent to our per-vertex P/Q labels — but it is run
+  under an extremal hypothesis to bound e(G), not stated as an
+  unconditional identity, and nothing extraction-shaped (min-degree ⟹
+  embedding) appears.
+
+**Verdict: both APPEARS-NEW verdicts above STAND**, now against a
+strictly larger evidence base: neither paper contains the Aggregate Sum
+Theorem's unconditional per-vertex identity Σ_m[P(m)+Q(m)] >= 2|E(G)|
+nor any minimum-degree extraction statement; both concern the fixed
+labeled path, where our Extraction Lemma demands only some dihedral
+relabeling (hence the a−1 threshold). Both papers are now cited in the
+entry's literature paragraph as the nearest relatives — the paragraph
+was extended before posting, not corrected after.
