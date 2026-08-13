@@ -1,0 +1,15 @@
+Exhaustive P(m)/Q(m) brute-force vs Lemma-4.1-recursion cross-check,
+plus Theorem 5 (aggregate sum) and Corollary 5.1 (max>=delta),
+over ALL labeled graphs on [n], n=0..6.
+
+n=0: graphs=     1  Lemma4.1 match=True  Thm5 (sum>=2E) holds=True  Cor5.1 (max>=delta) holds=True
+n=1: graphs=     1  Lemma4.1 match=True  Thm5 (sum>=2E) holds=True  Cor5.1 (max>=delta) holds=True
+n=2: graphs=     2  Lemma4.1 match=True  Thm5 (sum>=2E) holds=True  Cor5.1 (max>=delta) holds=True
+n=3: graphs=     8  Lemma4.1 match=True  Thm5 (sum>=2E) holds=True  Cor5.1 (max>=delta) holds=True
+n=4: graphs=    64  Lemma4.1 match=True  Thm5 (sum>=2E) holds=True  Cor5.1 (max>=delta) holds=True
+n=5: graphs=  1024  Lemma4.1 match=True  Thm5 (sum>=2E) holds=True  Cor5.1 (max>=delta) holds=True
+n=6: graphs= 32768  Lemma4.1 match=True  Thm5 (sum>=2E) holds=True  Cor5.1 (max>=delta) holds=True
+
+Total graphs checked (n=0..6): 33868
+Minimum Theorem-5 slack (sumPQ - 2E) observed: 0 at (n,mask)=(1, 0)
+GRAND RESULT -- Lemma 4.1 exact match AND Theorem 5 AND Corollary 5.1 hold on ALL graphs to n=6: True

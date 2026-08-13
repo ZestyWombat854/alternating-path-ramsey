@@ -1,0 +1,29 @@
+Orbit/stabilizer of P_a^alt under Dih(a), computed directly from
+statement.md's definitions (defs.py), a=3..25 (both parities).
+Claim under test (Lemma 0.2): orbit size = a exactly, |Stab| = 2 exactly.
+
+a= 3 (odd )  |Dih(a)|=  6  orbit= 3  stab=2  OK=True
+a= 4 (even)  |Dih(a)|=  8  orbit= 4  stab=2  OK=True
+a= 5 (odd )  |Dih(a)|= 10  orbit= 5  stab=2  OK=True
+a= 6 (even)  |Dih(a)|= 12  orbit= 6  stab=2  OK=True
+a= 7 (odd )  |Dih(a)|= 14  orbit= 7  stab=2  OK=True
+a= 8 (even)  |Dih(a)|= 16  orbit= 8  stab=2  OK=True
+a= 9 (odd )  |Dih(a)|= 18  orbit= 9  stab=2  OK=True
+a=10 (even)  |Dih(a)|= 20  orbit=10  stab=2  OK=True
+a=11 (odd )  |Dih(a)|= 22  orbit=11  stab=2  OK=True
+a=12 (even)  |Dih(a)|= 24  orbit=12  stab=2  OK=True
+a=13 (odd )  |Dih(a)|= 26  orbit=13  stab=2  OK=True
+a=14 (even)  |Dih(a)|= 28  orbit=14  stab=2  OK=True
+a=15 (odd )  |Dih(a)|= 30  orbit=15  stab=2  OK=True
+a=16 (even)  |Dih(a)|= 32  orbit=16  stab=2  OK=True
+a=17 (odd )  |Dih(a)|= 34  orbit=17  stab=2  OK=True
+a=18 (even)  |Dih(a)|= 36  orbit=18  stab=2  OK=True
+a=19 (odd )  |Dih(a)|= 38  orbit=19  stab=2  OK=True
+a=20 (even)  |Dih(a)|= 40  orbit=20  stab=2  OK=True
+a=21 (odd )  |Dih(a)|= 42  orbit=21  stab=2  OK=True
+a=22 (even)  |Dih(a)|= 44  orbit=22  stab=2  OK=True
+a=23 (odd )  |Dih(a)|= 46  orbit=23  stab=2  OK=True
+a=24 (even)  |Dih(a)|= 48  orbit=24  stab=2  OK=True
+a=25 (odd )  |Dih(a)|= 50  orbit=25  stab=2  OK=True
+
+ALL PASS (a=3..25): True

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/ZqQnkL5YI+KPawBKj8OR9gON4V8</id>
+  <title>arXiv Query: search_query=abs:"dihedral Ramsey" OR abs:"alternating path Ramsey"&amp;id_list=&amp;start=0&amp;max_results=20</title>
+  <updated>2026-08-13T14:39:27Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22dihedral+Ramsey%22+OR+abs:%22alternating+path+Ramsey%22&amp;start=0&amp;max_results=20&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>20</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2607.06817v2</id>
+    <title>Computation of small reflective and dihedral Ramsey numbers</title>
+    <updated>2026-07-12T12:54:29Z</updated>
+    <link href="https://arxiv.org/abs/2607.06817v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.06817v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Throughout, all graphs are simple, finite and have vertex sets of the form $\{ 0, 1, 2, \ldots, n - 1 \}$ for some $n \in \mathbb{N}$. For graphs $G$ and $H$, and a permutation group $Γ$ on the vertex set of $H$, we say that $H$ is $Γ$-embeddable in $G$ if there exists a graph homomorphism from $H$ to $G$ of the form $ψ\circ \varphi$, where $\varphi \in Γ$ and $ψ$ is an increasing injection. Recently, standard and ordered Ramsey numbers of graphs were unified through the introduction of permutational Ramsey numbers, defined as follows. For graphs $H_1, H_2, \ldots, H_k$ and permutation groups $Γ_1, Γ_2, \ldots, Γ_k$ on their respective vertex sets, the permutational Ramsey number $R(H_1^{Γ_1}, H_2^{Γ_2}, \ldots, H_k^{Γ_k})$ is the minimum $n \in \mathbb{N}$ such that for every $k$-edge-coloring of a complete graph on $n$ vertices, there exists some $j \in \{1, 2, \ldots, k\}$ for which $H_j$ is $Γ_j$-embeddable in the spanning subgraph of the complete graph comprising the edges of color $j$.
+  Here, we consider reflective (resp. dihedral) Ramsey numbers, which are a specific class of permutational Ramsey numbers in which each group $Γ_j$ is the reflection group (resp. dihedral group) on the naturally ordered vertex set of $H_j$. Focusing on the two-color case, we apply the SAT-based approach originally proposed by Poljak for ordered Ramsey numbers and recently extended to cyclic Ramsey numbers. We utilize the Kissat SAT solver to obtain exact values and lower bounds for small reflective and dihedral Ramsey numbers whose two arguments belong to the following graph classes: monotone and alternating paths, monotone cycles, start-central stars, complete graphs and nested matchings. We also derive several general results and formulate conjectures based on the computational findings.</summary>
+    <category term="math.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-07T21:24:10Z</published>
+    <arxiv:primary_category term="math.CO"/>
+    <author>
+      <name>Ivan Damnjanović</name>
+    </author>
+    <author>
+      <name>Irena Đorđević</name>
+    </author>
+  </entry>
+</feed>

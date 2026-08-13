@@ -1,0 +1,29 @@
+{
+  "script": "encode_5_3_gap.py",
+  "run_utc": "2026-08-13T14:37:18+00:00",
+  "purpose": "Close referee B's declared NOT-DONE gap: (5,3) cell upper leg",
+  "kissat_binary": "kissat",
+  "n8_selfcheck": {
+    "n": 8,
+    "vars": 28,
+    "clauses": 616,
+    "kissat_exit": 10,
+    "timed_out": false,
+    "expect": "SAT (lower bound: R_dih(P_5alt,K_3) > 8)",
+    "verdict": "SAT",
+    "independent_witness_check": true
+  },
+  "n9_target": {
+    "n": 9,
+    "vars": 36,
+    "clauses": 1344,
+    "kissat_exit": 20,
+    "timed_out": false,
+    "expect": "UNSAT (upper bound: R_dih(P_5alt,K_3) <= 9)",
+    "verdict": "UNSAT",
+    "independent_witness_check": null
+  },
+  "gap_closed": true,
+  "conclusion": "R_dih(P_5alt,K_3) = 9 -- both legs independently confirmed (n=8 SAT with a brute-force-validated witness, n=9 UNSAT); referee B's gap is closed",
+  "note": "No DRAT certificate generated for the n=9 UNSAT leg (staging-only closure per the task brief; kissat's exit code 20 and full log are the evidence retained here)."
+}

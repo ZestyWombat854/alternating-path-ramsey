@@ -1,0 +1,2 @@
+Checked 322 (a,c) pairs, a=3..25.
+rho(H_c)=H_(c+2) and sigma(H_c)=H_(-3-c mod a) hold in ALL cases: True

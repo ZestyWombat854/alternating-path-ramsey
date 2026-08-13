@@ -1,0 +1,3 @@
+c n=8: decoded witness (colour1=default, colour2=marked)
+c colour-2 pairs: [(0, 1), (0, 2), (0, 3), (0, 4), (1, 5), (1, 6), (1, 7), (2, 5), (2, 6), (2, 7), (3, 5), (3, 6), (3, 7), (4, 5), (4, 6), (4, 7)]
+c independent brute-force check (separate code path): no colour-1 Dih(5)-copy of P_5alt: True; no colour-2 K_3: True
