@@ -111,3 +111,9 @@ re-verified fresh on posting day — Semantic Scholar reports
 citationCount 0 for arXiv:2607.06817 (task mirror
 semanticscholar-2607.06817-prepost-20260813.json, 2026-08-13T18:35Z).
 Row 8's original NOT-DONE caveat is thereby cleared for this posting.
+
+## Quickstart-sentence row (appended 2026-08-13, entry-text polish)
+
+| Claim in entry text | Backing in this bundle |
+|---|---|
+| "Fastest independent check: two referee-written checkers with zero shared code ... 33,868 graphs ... about one second each, Python 3 stdlib only" | referees/B/code/verify_PQ_aggregate.py + referees/A/code/part4_pq.py (imports: stdlib only — inspect the files); README.md §"Verify the core result in about a second" (both re-timed at ~1.1 s from a fresh clone, 2026-08-13, before the section was written); independence per rows 16–17 |
