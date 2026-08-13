@@ -1,0 +1,20 @@
+name: Lean verification
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean
+      - name: Full verification (build + escape-hatch scan + axiom audit)
+        run: ./verify.sh
+        working-directory: lean
